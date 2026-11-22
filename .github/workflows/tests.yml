@@ -1,0 +1,18 @@
+name: tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run tests (stdlib only, no network, no keys)
+        run: for t in tests/test_*.py; do python "$t" || exit 1; done
+      - name: Backtest on synthetic data
+        run: |
+          python make_synthetic_data.py synthetic_history.csv
+          python backtest.py synthetic_history.csv

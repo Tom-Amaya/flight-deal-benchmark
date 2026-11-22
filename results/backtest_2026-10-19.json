@@ -1,0 +1,809 @@
+{
+  "data": "Private fare history exported 2026-10-19 (14,919 rows) plus holiday-probe fares; not published. Produced by backtest.py.",
+  "start": "2026-05-21",
+  "history_rows": 14919,
+  "methods": {
+    "v1": {
+      "judged": 5293,
+      "coverage_pct": 99.0,
+      "flagged": 1077,
+      "scored": 1001,
+      "false_pct": 48.5,
+      "mean_over_pts": 23.0,
+      "p90_over_pts": 48.8,
+      "true_deals_20pct": 453,
+      "missed_pct": 63.4
+    },
+    "v1.1": {
+      "judged": 5293,
+      "coverage_pct": 99.9,
+      "flagged": 595,
+      "scored": 552,
+      "false_pct": 35.5,
+      "mean_over_pts": 13.8,
+      "p90_over_pts": 32.0,
+      "true_deals_20pct": 453,
+      "missed_pct": 74.0
+    },
+    "v2": {
+      "judged": 5293,
+      "coverage_pct": 93.7,
+      "flagged": 424,
+      "scored": 405,
+      "false_pct": 9.9,
+      "mean_over_pts": 5.9,
+      "p90_over_pts": 18.3,
+      "true_deals_20pct": 453,
+      "missed_pct": 60.7
+    },
+    "v2_15": {
+      "judged": 5293,
+      "coverage_pct": 93.7,
+      "flagged": 491,
+      "scored": 470,
+      "false_pct": 12.8,
+      "mean_over_pts": 6.2,
+      "p90_over_pts": 19.1,
+      "true_deals_20pct": 453,
+      "missed_pct": 57.6
+    }
+  },
+  "by_departure_cell": {
+    "CARNIVAL": {
+      "v1": {
+        "judged": 155,
+        "coverage_pct": 98.7,
+        "flagged": 26,
+        "scored": 26,
+        "false_pct": 42.3,
+        "mean_over_pts": 18.9,
+        "p90_over_pts": 40.7,
+        "true_deals_20pct": 8,
+        "missed_pct": 25.0
+      },
+      "v1.1": {
+        "judged": 155,
+        "coverage_pct": 100.0,
+        "flagged": 23,
+        "scored": 23,
+        "false_pct": 43.5,
+        "mean_over_pts": 22.1,
+        "p90_over_pts": 38.4,
+        "true_deals_20pct": 8,
+        "missed_pct": 37.5
+      },
+      "v2": {
+        "judged": 155,
+        "coverage_pct": 100.0,
+        "flagged": 18,
+        "scored": 18,
+        "false_pct": 50.0,
+        "mean_over_pts": 30.7,
+        "p90_over_pts": 46.8,
+        "true_deals_20pct": 8,
+        "missed_pct": 62.5
+      },
+      "v2_15": {
+        "judged": 155,
+        "coverage_pct": 100.0,
+        "flagged": 21,
+        "scored": 21,
+        "false_pct": 52.4,
+        "mean_over_pts": 28.8,
+        "p90_over_pts": 46.8,
+        "true_deals_20pct": 8,
+        "missed_pct": 62.5
+      }
+    },
+    "EASTER": {
+      "v1": {
+        "judged": 67,
+        "coverage_pct": 100.0,
+        "flagged": 3,
+        "scored": 0,
+        "false_pct": null,
+        "mean_over_pts": null,
+        "p90_over_pts": null,
+        "true_deals_20pct": 0,
+        "missed_pct": null
+      },
+      "v1.1": {
+        "judged": 67,
+        "coverage_pct": 100.0,
+        "flagged": 2,
+        "scored": 0,
+        "false_pct": null,
+        "mean_over_pts": null,
+        "p90_over_pts": null,
+        "true_deals_20pct": 0,
+        "missed_pct": null
+      },
+      "v2": {
+        "judged": 67,
+        "coverage_pct": 100.0,
+        "flagged": 1,
+        "scored": 0,
+        "false_pct": null,
+        "mean_over_pts": null,
+        "p90_over_pts": null,
+        "true_deals_20pct": 0,
+        "missed_pct": null
+      },
+      "v2_15": {
+        "judged": 67,
+        "coverage_pct": 100.0,
+        "flagged": 2,
+        "scored": 0,
+        "false_pct": null,
+        "mean_over_pts": null,
+        "p90_over_pts": null,
+        "true_deals_20pct": 0,
+        "missed_pct": null
+      }
+    },
+    "NORMAL": {
+      "v1": {
+        "judged": 3354,
+        "coverage_pct": 98.9,
+        "flagged": 926,
+        "scored": 857,
+        "false_pct": 52.7,
+        "mean_over_pts": 25.5,
+        "p90_over_pts": 50.4,
+        "true_deals_20pct": 185,
+        "missed_pct": 45.9
+      },
+      "v1.1": {
+        "judged": 3354,
+        "coverage_pct": 99.9,
+        "flagged": 511,
+        "scored": 474,
+        "false_pct": 38.0,
+        "mean_over_pts": 15.2,
+        "p90_over_pts": 31.7,
+        "true_deals_20pct": 185,
+        "missed_pct": 55.1
+      },
+      "v2": {
+        "judged": 3354,
+        "coverage_pct": 99.6,
+        "flagged": 242,
+        "scored": 224,
+        "false_pct": 10.3,
+        "mean_over_pts": 4.7,
+        "p90_over_pts": 16.2,
+        "true_deals_20pct": 185,
+        "missed_pct": 58.9
+      },
+      "v2_15": {
+        "judged": 3354,
+        "coverage_pct": 99.6,
+        "flagged": 242,
+        "scored": 224,
+        "false_pct": 10.3,
+        "mean_over_pts": 4.7,
+        "p90_over_pts": 16.2,
+        "true_deals_20pct": 185,
+        "missed_pct": 58.9
+      }
+    },
+    "PRESIDENTS": {
+      "v1": {
+        "judged": 70,
+        "coverage_pct": 98.6,
+        "flagged": 1,
+        "scored": 0,
+        "false_pct": null,
+        "mean_over_pts": null,
+        "p90_over_pts": null,
+        "true_deals_20pct": 0,
+        "missed_pct": null
+      },
+      "v1.1": {
+        "judged": 70,
+        "coverage_pct": 100.0,
+        "flagged": 1,
+        "scored": 0,
+        "false_pct": null,
+        "mean_over_pts": null,
+        "p90_over_pts": null,
+        "true_deals_20pct": 0,
+        "missed_pct": null
+      },
+      "v2": {
+        "judged": 70,
+        "coverage_pct": 100.0,
+        "flagged": 0,
+        "scored": 0,
+        "false_pct": null,
+        "mean_over_pts": null,
+        "p90_over_pts": null,
+        "true_deals_20pct": 0,
+        "missed_pct": null
+      },
+      "v2_15": {
+        "judged": 70,
+        "coverage_pct": 100.0,
+        "flagged": 1,
+        "scored": 0,
+        "false_pct": null,
+        "mean_over_pts": null,
+        "p90_over_pts": null,
+        "true_deals_20pct": 0,
+        "missed_pct": null
+      }
+    },
+    "SUMMER": {
+      "v1": {
+        "judged": 437,
+        "coverage_pct": 99.5,
+        "flagged": 31,
+        "scored": 30,
+        "false_pct": 6.7,
+        "mean_over_pts": 1.0,
+        "p90_over_pts": 12.4,
+        "true_deals_20pct": 69,
+        "missed_pct": 75.4
+      },
+      "v1.1": {
+        "judged": 437,
+        "coverage_pct": 100.0,
+        "flagged": 31,
+        "scored": 30,
+        "false_pct": 6.7,
+        "mean_over_pts": 1.0,
+        "p90_over_pts": 12.4,
+        "true_deals_20pct": 69,
+        "missed_pct": 75.4
+      },
+      "v2": {
+        "judged": 437,
+        "coverage_pct": 99.5,
+        "flagged": 22,
+        "scored": 22,
+        "false_pct": 4.5,
+        "mean_over_pts": 8.3,
+        "p90_over_pts": 18.6,
+        "true_deals_20pct": 69,
+        "missed_pct": 79.7
+      },
+      "v2_15": {
+        "judged": 437,
+        "coverage_pct": 99.5,
+        "flagged": 74,
+        "scored": 74,
+        "false_pct": 25.7,
+        "mean_over_pts": 8.8,
+        "p90_over_pts": 19.3,
+        "true_deals_20pct": 69,
+        "missed_pct": 63.8
+      }
+    },
+    "THANKSGIVING": {
+      "v1": {
+        "judged": 199,
+        "coverage_pct": 99.0,
+        "flagged": 47,
+        "scored": 46,
+        "false_pct": 43.5,
+        "mean_over_pts": 20.5,
+        "p90_over_pts": 44.8,
+        "true_deals_20pct": 20,
+        "missed_pct": 60.0
+      },
+      "v1.1": {
+        "judged": 199,
+        "coverage_pct": 100.0,
+        "flagged": 20,
+        "scored": 19,
+        "false_pct": 21.1,
+        "mean_over_pts": 1.8,
+        "p90_over_pts": 16.2,
+        "true_deals_20pct": 20,
+        "missed_pct": 65.0
+      },
+      "v2": {
+        "judged": 199,
+        "coverage_pct": 100.0,
+        "flagged": 4,
+        "scored": 4,
+        "false_pct": 0.0,
+        "mean_over_pts": 3.4,
+        "p90_over_pts": 5.2,
+        "true_deals_20pct": 20,
+        "missed_pct": 90.0
+      },
+      "v2_15": {
+        "judged": 199,
+        "coverage_pct": 100.0,
+        "flagged": 12,
+        "scored": 12,
+        "false_pct": 0.0,
+        "mean_over_pts": 1.6,
+        "p90_over_pts": 9.0,
+        "true_deals_20pct": 20,
+        "missed_pct": 80.0
+      }
+    },
+    "XMAS_CORE": {
+      "v1": {
+        "judged": 603,
+        "coverage_pct": 98.8,
+        "flagged": 5,
+        "scored": 5,
+        "false_pct": 0.0,
+        "mean_over_pts": -10.7,
+        "p90_over_pts": 2.4,
+        "true_deals_20pct": 87,
+        "missed_pct": 96.6
+      },
+      "v1.1": {
+        "judged": 603,
+        "coverage_pct": 100.0,
+        "flagged": 0,
+        "scored": 0,
+        "false_pct": null,
+        "mean_over_pts": null,
+        "p90_over_pts": null,
+        "true_deals_20pct": 87,
+        "missed_pct": 100.0
+      },
+      "v2": {
+        "judged": 603,
+        "coverage_pct": 81.6,
+        "flagged": 107,
+        "scored": 107,
+        "false_pct": 6.5,
+        "mean_over_pts": 6.4,
+        "p90_over_pts": 17.2,
+        "true_deals_20pct": 87,
+        "missed_pct": 31.0
+      },
+      "v2_15": {
+        "judged": 603,
+        "coverage_pct": 81.6,
+        "flagged": 107,
+        "scored": 107,
+        "false_pct": 6.5,
+        "mean_over_pts": 6.4,
+        "p90_over_pts": 17.2,
+        "true_deals_20pct": 87,
+        "missed_pct": 31.0
+      }
+    },
+    "XMAS_EDGE_POST": {
+      "v1": {
+        "judged": 137,
+        "coverage_pct": 100.0,
+        "flagged": 32,
+        "scored": 31,
+        "false_pct": 0.0,
+        "mean_over_pts": -4.9,
+        "p90_over_pts": 4.4,
+        "true_deals_20pct": 57,
+        "missed_pct": 50.9
+      },
+      "v1.1": {
+        "judged": 137,
+        "coverage_pct": 100.0,
+        "flagged": 5,
+        "scored": 4,
+        "false_pct": 0.0,
+        "mean_over_pts": -23.0,
+        "p90_over_pts": -25.0,
+        "true_deals_20pct": 57,
+        "missed_pct": 93.0
+      },
+      "v2": {
+        "judged": 137,
+        "coverage_pct": 25.5,
+        "flagged": 11,
+        "scored": 11,
+        "false_pct": 0.0,
+        "mean_over_pts": -9.5,
+        "p90_over_pts": 0.0,
+        "true_deals_20pct": 57,
+        "missed_pct": 82.5
+      },
+      "v2_15": {
+        "judged": 137,
+        "coverage_pct": 25.5,
+        "flagged": 12,
+        "scored": 12,
+        "false_pct": 0.0,
+        "mean_over_pts": -8.7,
+        "p90_over_pts": 0.0,
+        "true_deals_20pct": 57,
+        "missed_pct": 80.7
+      }
+    },
+    "XMAS_EDGE_PRE": {
+      "v1": {
+        "judged": 271,
+        "coverage_pct": 98.2,
+        "flagged": 6,
+        "scored": 6,
+        "false_pct": 0.0,
+        "mean_over_pts": -4.8,
+        "p90_over_pts": 0.0,
+        "true_deals_20pct": 27,
+        "missed_pct": 85.2
+      },
+      "v1.1": {
+        "judged": 271,
+        "coverage_pct": 100.0,
+        "flagged": 2,
+        "scored": 2,
+        "false_pct": 0.0,
+        "mean_over_pts": -14.0,
+        "p90_over_pts": -17.1,
+        "true_deals_20pct": 27,
+        "missed_pct": 92.6
+      },
+      "v2": {
+        "judged": 271,
+        "coverage_pct": 61.3,
+        "flagged": 19,
+        "scored": 19,
+        "false_pct": 0.0,
+        "mean_over_pts": -0.4,
+        "p90_over_pts": 9.7,
+        "true_deals_20pct": 27,
+        "missed_pct": 51.9
+      },
+      "v2_15": {
+        "judged": 271,
+        "coverage_pct": 61.3,
+        "flagged": 20,
+        "scored": 20,
+        "false_pct": 0.0,
+        "mean_over_pts": 0.1,
+        "p90_over_pts": 10.3,
+        "true_deals_20pct": 27,
+        "missed_pct": 51.9
+      }
+    }
+  },
+  "by_scan_month": {
+    "2026-05": {
+      "v1": {
+        "judged": 428,
+        "coverage_pct": 99.5,
+        "flagged": 59,
+        "scored": 58,
+        "false_pct": 20.7,
+        "mean_over_pts": 7.5,
+        "p90_over_pts": 29.0,
+        "true_deals_20pct": 59,
+        "missed_pct": 71.2
+      },
+      "v1.1": {
+        "judged": 428,
+        "coverage_pct": 100.0,
+        "flagged": 59,
+        "scored": 58,
+        "false_pct": 20.7,
+        "mean_over_pts": 7.5,
+        "p90_over_pts": 29.0,
+        "true_deals_20pct": 59,
+        "missed_pct": 71.2
+      },
+      "v2": {
+        "judged": 428,
+        "coverage_pct": 99.3,
+        "flagged": 28,
+        "scored": 28,
+        "false_pct": 17.9,
+        "mean_over_pts": 5.8,
+        "p90_over_pts": 19.1,
+        "true_deals_20pct": 59,
+        "missed_pct": 81.4
+      },
+      "v2_15": {
+        "judged": 428,
+        "coverage_pct": 99.3,
+        "flagged": 54,
+        "scored": 54,
+        "false_pct": 25.9,
+        "mean_over_pts": 5.2,
+        "p90_over_pts": 17.4,
+        "true_deals_20pct": 59,
+        "missed_pct": 69.5
+      }
+    },
+    "2026-06": {
+      "v1": {
+        "judged": 1014,
+        "coverage_pct": 99.6,
+        "flagged": 179,
+        "scored": 175,
+        "false_pct": 43.4,
+        "mean_over_pts": 17.4,
+        "p90_over_pts": 33.9,
+        "true_deals_20pct": 74,
+        "missed_pct": 62.2
+      },
+      "v1.1": {
+        "judged": 1014,
+        "coverage_pct": 100.0,
+        "flagged": 179,
+        "scored": 175,
+        "false_pct": 43.4,
+        "mean_over_pts": 17.4,
+        "p90_over_pts": 33.9,
+        "true_deals_20pct": 74,
+        "missed_pct": 62.2
+      },
+      "v2": {
+        "judged": 1014,
+        "coverage_pct": 93.2,
+        "flagged": 59,
+        "scored": 58,
+        "false_pct": 15.5,
+        "mean_over_pts": 7.9,
+        "p90_over_pts": 21.1,
+        "true_deals_20pct": 74,
+        "missed_pct": 71.6
+      },
+      "v2_15": {
+        "judged": 1014,
+        "coverage_pct": 93.2,
+        "flagged": 88,
+        "scored": 87,
+        "false_pct": 20.7,
+        "mean_over_pts": 9.0,
+        "p90_over_pts": 21.5,
+        "true_deals_20pct": 74,
+        "missed_pct": 63.5
+      }
+    },
+    "2026-07": {
+      "v1": {
+        "judged": 1060,
+        "coverage_pct": 99.0,
+        "flagged": 150,
+        "scored": 150,
+        "false_pct": 27.3,
+        "mean_over_pts": 10.5,
+        "p90_over_pts": 25.8,
+        "true_deals_20pct": 93,
+        "missed_pct": 51.6
+      },
+      "v1.1": {
+        "judged": 1060,
+        "coverage_pct": 99.9,
+        "flagged": 126,
+        "scored": 126,
+        "false_pct": 29.4,
+        "mean_over_pts": 11.0,
+        "p90_over_pts": 25.8,
+        "true_deals_20pct": 93,
+        "missed_pct": 62.4
+      },
+      "v2": {
+        "judged": 1060,
+        "coverage_pct": 93.7,
+        "flagged": 78,
+        "scored": 78,
+        "false_pct": 7.7,
+        "mean_over_pts": 4.5,
+        "p90_over_pts": 16.1,
+        "true_deals_20pct": 93,
+        "missed_pct": 63.4
+      },
+      "v2_15": {
+        "judged": 1060,
+        "coverage_pct": 93.7,
+        "flagged": 78,
+        "scored": 78,
+        "false_pct": 7.7,
+        "mean_over_pts": 4.5,
+        "p90_over_pts": 16.1,
+        "true_deals_20pct": 93,
+        "missed_pct": 63.4
+      }
+    },
+    "2026-08": {
+      "v1": {
+        "judged": 1098,
+        "coverage_pct": 98.0,
+        "flagged": 57,
+        "scored": 42,
+        "false_pct": 14.3,
+        "mean_over_pts": 6.8,
+        "p90_over_pts": 22.5,
+        "true_deals_20pct": 105,
+        "missed_pct": 88.6
+      },
+      "v1.1": {
+        "judged": 1098,
+        "coverage_pct": 99.7,
+        "flagged": 46,
+        "scored": 38,
+        "false_pct": 15.8,
+        "mean_over_pts": 8.9,
+        "p90_over_pts": 23.5,
+        "true_deals_20pct": 105,
+        "missed_pct": 91.4
+      },
+      "v2": {
+        "judged": 1098,
+        "coverage_pct": 89.2,
+        "flagged": 119,
+        "scored": 117,
+        "false_pct": 4.3,
+        "mean_over_pts": 4.8,
+        "p90_over_pts": 15.4,
+        "true_deals_20pct": 105,
+        "missed_pct": 41.9
+      },
+      "v2_15": {
+        "judged": 1098,
+        "coverage_pct": 89.2,
+        "flagged": 121,
+        "scored": 118,
+        "false_pct": 4.2,
+        "mean_over_pts": 4.8,
+        "p90_over_pts": 15.4,
+        "true_deals_20pct": 105,
+        "missed_pct": 41.9
+      }
+    },
+    "2026-09": {
+      "v1": {
+        "judged": 1031,
+        "coverage_pct": 99.2,
+        "flagged": 547,
+        "scored": 497,
+        "false_pct": 65.8,
+        "mean_over_pts": 33.7,
+        "p90_over_pts": 57.6,
+        "true_deals_20pct": 59,
+        "missed_pct": 30.5
+      },
+      "v1.1": {
+        "judged": 1031,
+        "coverage_pct": 100.0,
+        "flagged": 124,
+        "scored": 101,
+        "false_pct": 46.5,
+        "mean_over_pts": 17.3,
+        "p90_over_pts": 34.2,
+        "true_deals_20pct": 59,
+        "missed_pct": 81.4
+      },
+      "v2": {
+        "judged": 1031,
+        "coverage_pct": 96.0,
+        "flagged": 87,
+        "scored": 76,
+        "false_pct": 3.9,
+        "mean_over_pts": 3.4,
+        "p90_over_pts": 14.0,
+        "true_deals_20pct": 59,
+        "missed_pct": 50.8
+      },
+      "v2_15": {
+        "judged": 1031,
+        "coverage_pct": 96.0,
+        "flagged": 90,
+        "scored": 78,
+        "false_pct": 3.8,
+        "mean_over_pts": 3.5,
+        "p90_over_pts": 14.1,
+        "true_deals_20pct": 59,
+        "missed_pct": 50.8
+      }
+    },
+    "2026-10": {
+      "v1": {
+        "judged": 662,
+        "coverage_pct": 98.8,
+        "flagged": 85,
+        "scored": 79,
+        "false_pct": 29.1,
+        "mean_over_pts": 11.9,
+        "p90_over_pts": 34.9,
+        "true_deals_20pct": 63,
+        "missed_pct": 63.5
+      },
+      "v1.1": {
+        "judged": 662,
+        "coverage_pct": 100.0,
+        "flagged": 61,
+        "scored": 54,
+        "false_pct": 33.3,
+        "mean_over_pts": 12.7,
+        "p90_over_pts": 36.3,
+        "true_deals_20pct": 63,
+        "missed_pct": 71.4
+      },
+      "v2": {
+        "judged": 662,
+        "coverage_pct": 94.9,
+        "flagged": 53,
+        "scored": 48,
+        "false_pct": 25.0,
+        "mean_over_pts": 12.4,
+        "p90_over_pts": 42.4,
+        "true_deals_20pct": 63,
+        "missed_pct": 65.1
+      },
+      "v2_15": {
+        "judged": 662,
+        "coverage_pct": 94.9,
+        "flagged": 60,
+        "scored": 55,
+        "false_pct": 25.5,
+        "mean_over_pts": 12.1,
+        "p90_over_pts": 41.7,
+        "true_deals_20pct": 63,
+        "missed_pct": 63.5
+      }
+    }
+  },
+  "christmas_share_of_7day_pool": {
+    "2026-06-01": {
+      "share_pct": 0.0,
+      "pool": 514
+    },
+    "2026-06-15": {
+      "share_pct": 0.0,
+      "pool": 470
+    },
+    "2026-07-01": {
+      "share_pct": 0.0,
+      "pool": 491
+    },
+    "2026-07-15": {
+      "share_pct": 0.0,
+      "pool": 484
+    },
+    "2026-08-01": {
+      "share_pct": 0.0,
+      "pool": 412
+    },
+    "2026-08-15": {
+      "share_pct": 0.0,
+      "pool": 417
+    },
+    "2026-09-01": {
+      "share_pct": 57.5,
+      "pool": 499
+    },
+    "2026-09-15": {
+      "share_pct": 58.3,
+      "pool": 492
+    },
+    "2026-10-01": {
+      "share_pct": 20.3,
+      "pool": 454
+    },
+    "2026-10-15": {
+      "share_pct": 27.0,
+      "pool": 463
+    }
+  },
+  "season_curve": {
+    "Dec 1-10": {
+      "median_ratio": 1.08,
+      "n": 455
+    },
+    "Dec 11-16": {
+      "median_ratio": 1.44,
+      "n": 271
+    },
+    "Dec 17-29": {
+      "median_ratio": 2.18,
+      "n": 603
+    },
+    "Dec 30-Jan 4": {
+      "median_ratio": 1.37,
+      "n": 137
+    },
+    "Jan 5-20": {
+      "median_ratio": 1.04,
+      "n": 228
+    }
+  }
+}

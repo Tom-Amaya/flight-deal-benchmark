@@ -1,0 +1,8 @@
+# Fare data never goes in this repo (the real history is private; synthetic files are generated)
+*.csv
+data/
+
+__pycache__/
+*.pyc
+.env*
+.DS_Store
